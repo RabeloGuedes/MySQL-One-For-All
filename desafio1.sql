@@ -37,7 +37,7 @@ CREATE TABLE albuns(
 CREATE TABLE cancoes(
   cancao_id INT NOT NULL AUTO_INCREMENT,
   nome_cancao VARCHAR(100) NOT NULL,
-  duracao_segundos INT NOT NULL,
+  duracao_minutos INT NOT NULL,
   album_id INT NOT NULL,
   artista_id INT NOT NULL,
   PRIMARY KEY (cancao_id),
@@ -104,7 +104,7 @@ VALUES
   ('No guarantees', 5, 2015),
   ('Apparatus', 6, 2015);
 
-INSERT INTO cancoes (nome_cancao, duracao_segundos, album_id, artista_id)
+INSERT INTO cancoes (nome_cancao, duracao_minutos, album_id, artista_id)
 VALUES 
   ('Soul For Us', 200, 1, 1),
   ('Reflections Of Magic', 163, 1, 1),
